@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "-";
+var prefix = ".";
 
 client.on('ready', () => {
 	console.log('Dream iS Here');
@@ -17,7 +17,7 @@ client.on('ready', () => {
 
 
 
-    const dreamv2 = ["472413769700474901"]
+    const dreamv2 = ["417355144615821314"]
     client.on('message', message => {
         var dream = message.content.split(` `).slice(1).join(' ');
           if (!dreamv2.includes(message.author.id)) return;
